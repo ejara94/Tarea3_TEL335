@@ -1,0 +1,21 @@
+{
+  "name": "com.example.hello",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.html",
+  "authors": [
+    "Esteban Jara"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "elgamal",
+    "angular",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "angular": "angularjs#^1.6.6",
+    "angular-route": "^1.6.6"
+  }
+}

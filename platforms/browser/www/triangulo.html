@@ -1,0 +1,24 @@
+<div>
+<h1>{{message}}</h1>
+<ng-form>
+    Ingrese Valor Altura  <input type="number" ng-model="triA"><br>
+    Ingrese Valor Base<input type="number" ng-model="triB"><br>
+
+  <input type="button" value="Calcula!" ng-click="hipotenusa()">
+</ng-form>
+
+<h2>{{'Altura : ' + triA + ',   Base :' + triB }}</h2>
+<h3>El valor de la hipotenusa es: {{resultado2}}</h3>
+
+    <svg height="400" width="500">
+        <path d="{{'M150 0 L150 '+(triA*10)+' L'+ (150+(triB*10)) +' '+(triA*10)+'Z'}}" />
+    </svg>
+
+
+
+    <p>
+  <a class="btn btn-warning btn-lg" href="#" role="button">
+    Volver al inicio.
+  </a>
+</p>
+</div>

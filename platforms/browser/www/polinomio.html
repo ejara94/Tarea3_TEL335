@@ -1,0 +1,24 @@
+<div>
+  <h1>{{message}}</h1>
+  <ng-form>
+    Ingrese Valor A <input type="number" ng-model="polA"> <br>
+    Ingrese Valor B <input type="number" ng-model="polB"> <br>
+    Ingrese Valor C <input type="number" ng-model="polC"> <br>
+    <input type="button" value="Let's Go!" ng-click="calcular()">
+  </ng-form>
+
+  <h2>{{polA + 'X² + ' + polB + 'X +' + polC + ' = 0'}}</h2>
+  <h3>{{resultado}}</h3>
+
+  <svg height="500" width="500">
+    <path d="{{'M0,'+10*(polA*64+polB*8+polC)+' Q80,-'+10*(polA*64+polB*8+polC)+' 160,'+10*(polA*64+polB*8+polC)}}" /> <!-- coordenadas *20, tomando x = {-8, 8}-->
+  </svg>
+
+
+
+  <p>
+    <a class="btn btn-warning btn-lg" href="#" role="button">
+      Volver al inicio.
+    </a>
+  </p>
+</div>
